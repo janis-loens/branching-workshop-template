@@ -1,9 +1,11 @@
-def meters_to_kilometers():
+def meters_to_kilometers(meters) -> float:
     """
-    Converrt meters to kilometers.
-    """
-    meters = float(input("Enter the length in meters: "))
-    kilometers = meters / 1000
-    print(f"{meters} meters is equal to {kilometers} kilometers.")
+    Convert meters to kilometers.
 
-meters_to_kilometers()
+    Args:
+    meters (int or float): The length in meters to convert.
+    Returns:
+    float: The length in kilometers.
+    """
+    kilometers = meters / 1000
+    return kilometers
